@@ -25,9 +25,12 @@ MACRO(STM32_LOCATE_CMSIS_REL_HEADERS)
         Include/core_cmInstr.h
     )
     SET(STM32_CMSIS_REL_HEADERS_F1 
-        CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h
-        CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
-        CM3/CoreSupport/core_cm3.h
+        Device/ST/STM32F0xx/Include/system_stm32f10x.h
+        Device/ST/STM32F0xx/Include/stm32f10x.h
+        Include/core_cm3.h
+        Include/arm_math.h
+        Include/core_cmFunc.h
+        Include/core_cmInstr.h
     )
     SET(STM32_CMSIS_REL_HEADERS_F2 
         Device/ST/STM32F2xx/Include/system_stm32f2xx.h

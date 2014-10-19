@@ -19,9 +19,9 @@ IF(${STM32_FAMILY} STREQUAL "F0")
 ELSEIF(${STM32_FAMILY} STREQUAL "F1")
     
     SET(CMSIS_SOURCES
-        ${STM32_CMSIS_PATH_F1}/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c
+        ${STM32_CMSIS_PATH_F1}/Device/ST/STM32F10x/Source/Templates/system_stm32f10x.c
     )
-    SET(STARTUP_PREFIX ${STM32_CMSIS_PATH_F1}/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_)
+    SET(STARTUP_PREFIX ${STM32_CMSIS_PATH_F1}/Device/ST/STM32F10x/Source/Templates/gcc_ride7/startup_stm32f10x_)
     
 ELSEIF(${STM32_FAMILY} STREQUAL "F2")
     
